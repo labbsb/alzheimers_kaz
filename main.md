@@ -1,4 +1,4 @@
-# Calling genotypes again: 
+#### Calling genotypes: 
 ```bash
 echo 'export PATH=/home/aygera/tools/array-analysis-cli-linux-x64-v2.1.0/array-analysis-cli/:$PATH' >> ~/.bashrc
 source ~/.bashrc
@@ -80,7 +80,5 @@ cat alz_kaz.fam | awk '{print $1}' > samples_after.tsv
 cat callRate.tsv | head -n 1 > afterQC.tsv
 grep -wf samples_after.tsv callRate.tsv >> afterQC.tsv
 ```
-
-The graphs for QC before after are in Downlaods folder. they need some work (Specified int he file)
 
 Gene names were identified in https://biit.cs.ut.ee/gprofiler/snpense
